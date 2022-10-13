@@ -190,7 +190,7 @@ Here’s an example of a list group that you can use right away.
 </script>
 
 <Dropdown label="Dropdown radio" class="w-60" >
-  <ul slot="content" class="p-3">
+  <ul class="p-3">
     <DropdownItem class="rounded" liClass="p-2 hover:bg-gray-100 dark:hover:bg-gray-600">
       <Radio name="dropdown" value={1} tinted>Individual</Radio>
       <Helper class="pl-6">Some helpful instruction goes over here.</Helper>
@@ -218,10 +218,10 @@ You can align the radio elements horizontally by using a wrapper tag and applyin
 </script>
 
 <div class="flex gap-3">
-  <Radio group={inline1} value="first">Inline 1</Radio>
-  <Radio group={inline1} value="second">Inline 2 checked</Radio>
-  <Radio group={inline1} value="third">Inline 3</Radio>
-  <Radio group={inline1} value="fourth" disabled>Inline disabled</Radio>
+  <Radio name='inline1' group={inline1} value="first">Inline 1</Radio>
+  <Radio name='inline1' group={inline1} value="second">Inline 2 checked</Radio>
+  <Radio name='inline1' group={inline1} value="third">Inline 3</Radio>
+  <Radio name='inline1' group={inline1} value="fourth" disabled>Inline disabled</Radio>
 </div>
 ```
 
@@ -233,10 +233,10 @@ You can use the property `inline` as the alternative.
   let inline2 = 'third';
 </script>
 
-<Radio group={inline2} inline value="first" class="mr-2">Inline 1</Radio>
-<Radio group={inline2} inline value="second" class="mr-2">Inline 2</Radio>
-<Radio group={inline2} inline value="third" class="mr-2">Inline checked</Radio>
-<Radio group={inline2} inline value="fourth" class="mr-2" disabled>Inline disabled</Radio>
+<Radio name='inline2' group={inline2} inline value="first" class="mr-2">Inline 1</Radio>
+<Radio name='inline2' group={inline2} inline value="second" class="mr-2">Inline 2</Radio>
+<Radio name='inline2' group={inline2} inline value="third" class="mr-2">Inline checked</Radio>
+<Radio name='inline2' group={inline2} inline value="fourth" class="mr-2" disabled>Inline disabled</Radio>
 ```
 
 <Htwo label="Colors" />
